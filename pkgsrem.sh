@@ -9,6 +9,6 @@ echo "Which package manager would you like to remove packages with?"  && echo &&
 sleep 1
 
 # The choice is set as a variable, and these will respond and execute the corresponding script.
-[[ "$INSTMGR" == "DNF." ]] && ./pkgsinstdnf.sh
-[[ "$INSTMGR" == "Flatpak." ]] && ./pkgsinstflatpak.sh
-[[ "$INSTMGR" == "Homebrew." ]] && ./pkgsinstbrew.sh
+[[ "$INSTMGR" == "DNF." ]] && ./pkgsremdnf.sh
+[[ "$INSTMGR" == "Flatpak." ]] && ./pkgsremflatpak.sh
+[[ "$INSTMGR" == "Homebrew." ]] && ./pkgsrembrew.sh
