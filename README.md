@@ -1,6 +1,6 @@
 # The Package Dealerer (name still in the works!)
 A tool to ease your package managing needs, all with the goodness of the terminal!
-**Still a WIP!** Right now, only the install option works.
+**Still a WIP!** Right now, only the installation and removal option works.
 
 ## What is it?
 *Tired of typing commands?* Me too, I groan in pain when I have to write another command. I also hate dealing with GUI app stores, they take forever to load (I'm looking at you KDE Discover). So what should I do? Just smush the two together! **The Package Dealerer (name being worked on.) guides you through everything, and all you do is select buttons and type in the package names.** 
