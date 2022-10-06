@@ -11,4 +11,4 @@ sleep 1
 # The choice is set as a variable, and these will respond and execute the corresponding script.
 [[ "$INSTMGR" == "DNF." ]] && ./pkgsremdnf.sh
 [[ "$INSTMGR" == "Flatpak." ]] && ./pkgsremflatpak.sh
-[[ "$INSTMGR" == "Homebrew." ]] && ./pkgsembrew.sh
+[[ "$INSTMGR" == "Homebrew." ]] && ./pkgsrembrew.sh
