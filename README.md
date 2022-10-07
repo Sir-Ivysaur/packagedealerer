@@ -1,6 +1,8 @@
 # The Package Dealerer (name still in the works!)
 A tool to ease your package managing needs, all with the goodness of the terminal!
-**Still a WIP!** Right now, only the installation and removal option works.
+**Still a WIP!** 
+
+Basic tasks — installing, removing, and searching for packages — are already usable.
 
 ## What is it?
 *Tired of typing commands?* Me too, I groan in pain when I have to write another command. I also hate dealing with GUI app stores, they take forever to load (I'm looking at you KDE Discover). So what should I do? Just smush the two together! **The Package Dealerer (name being worked on.) guides you through everything, and all you do is select buttons and type in the package names.** 
@@ -12,5 +14,7 @@ This is a Bash script. So you need Bash (duh). It also won't deal with .dmg file
 
 ## Plans (other than finishing the other options)
 **Currently, it only works with [DNF](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/DNF/) (the default package manager for [Fedora](https://getfedora.org/)), [Flatpak](https://www.flatpak.org/), and [Homebrew](https://brew.sh/) out of the box.** You *could* modify the script to make it work with other package managers, but 'modifying scripts' and 'ease your package managing needs' seem like opposite terms, so I'll try making something to help change the package manager without editing the scripts. In fact, I'll try to see if I can have it do this automatically by checking what distro you're using. But that's for another time. 
+
+The thing requires multiple seperate scripts because it was messing with me when I tried it. That was back when I used 'nano' (I'm probably gonna get bombarded with 'I use Vim' messages somehow). Maybe I can streamline it by reducing the amount of scripts, for example putting the functions of 'pkgsinstflatpak.sh' straight into 'pkgsinst.sh'.
 
 Perhaps I could also make it so that it will install Flatpak, Snap (lol no) or Homebrew if not installed. 
