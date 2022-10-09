@@ -5,7 +5,9 @@ echo
 
 echo "You finally decided to do an update."
 echo "I could have some package managers update specific packages only. However, Homebrew can't do this, it seems."
-echo "By the way, if you want to upgrade everything (and I mean **everything**), consider trying 'topgrade'." | gum format -t markdown
+echo
+echo "By the way, if you want to upgrade everything (and I mean everything), consider trying 'topgrade'."
+echo
 
 YN=$(gum choose --height=2 --cursor="> " --limit=1 "Update specific packages." "Update everything.")
 

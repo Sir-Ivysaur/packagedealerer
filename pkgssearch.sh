@@ -8,7 +8,8 @@ echo
 echo "First, tell me what you're looking for." 
 echo "Then pick a package manager."
 echo 
-echo "Oh and by the way, if you want to search for native packages (the first package manager option here is usually one that installs native packages), you'd be better off looking on repology.org. It's faster than searching through the package manager (I'm looking at you DNF) plus you can see if it's outdated or not!"
+echo "Oh and by the way, if you want to search for native packages (the first package manager option here is usually one that installs native packages),"
+echo "you'd be better off looking on repology.org. It's faster than searching through the package manager (I'm looking at you DNF) plus you can see if it's outdated or not!"
 
 echo
 PACKAGE=$(gum input --placeholder "What are you looking for?")
