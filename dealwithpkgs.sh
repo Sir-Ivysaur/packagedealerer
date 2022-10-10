@@ -5,7 +5,7 @@ clear
 
 # Presents ASCII art. Generated with textkool.com's ASCII art generator, using its Pagga font.
 echo
-cat .logo.txt
+head .about.md
 echo
 sleep 1
 
