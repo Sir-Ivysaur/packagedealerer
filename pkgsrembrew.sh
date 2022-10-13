@@ -19,4 +19,7 @@ gum spin --spinner dot --title "Unbrewing...?" -- sleep 2.5; sleep 1; clear
 # This asks yes or no.
 gum confirm "Ready when you are! Depending on how you installed Homebrew, you might or might not need 'sudo'." --affirmative="I'm ready!" --negative="No thanks, I'd like to drink that tea." && brew uninstall "$PACKAGE" || echo "Okay, then."
 
+# The above confirmation dialogue, but uses the variable package manager, that variable being $EXTRAPKGREM.
+    # gum confirm "Ready when you are! Depending on how you installed Homebrew, you might or might not need 'sudo'." --affirmative="I'm ready!" --negative="No thanks, I'd like to drink that tea." && $EXTRAPKGREM "$PACKAGE" || echo "Okay, then."
+
 sleep 0.5; clear

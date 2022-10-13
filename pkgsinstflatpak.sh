@@ -18,4 +18,7 @@ gum spin --spinner dot --title "Inputting package names..." -- sleep 2.5; sleep 
 # Asks for confirmation.
 gum confirm "We are ready, now!" --affirmative="Start installing!" --negative="Nah, not gonna do it right now." && flatpak install "$PACKAGE" || echo "Okay, then."
 
+# This uses the variable (which would be $AGNOSPKGINST) distro-agnostic package manager.
+    # gum confirm "We are ready, now!" --affirmative="Start installing!" --negative="Nah, not gonna do it right now." && $AGNOSPKGINST "$PACKAGE" || echo "Okay, then."
+
 sleep 0.5; clear

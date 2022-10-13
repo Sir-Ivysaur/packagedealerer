@@ -55,7 +55,7 @@ clear
         # This variable specifies the update command for the extra package manager.
             # EXTRAPKGUPDATE=$(brew update && brew upgrade)
 
-# Presents ASCII art. Generated with textkool.com's ASCII art generator, using its Pagga font.
+# Presents ASCII art. Generated with textkool.com's ASCII art generator, using its Pagga font. This pulls it from the .about.md file.
 echo
 head .about.md
 echo

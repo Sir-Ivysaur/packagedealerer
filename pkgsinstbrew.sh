@@ -18,4 +18,7 @@ gum spin --spinner dot --title "Brewing up an install command..." -- sleep 2.5; 
 # Confirmation dialog.
 gum confirm "Time to brew! You don't need 'sudo' for Homebrew." --affirmative="Glug, glug." --negative="Not thirsty." && brew install "$PACKAGE" || echo "Okay, then."
 
+# Uses variable extra package manager.
+    # gum confirm "Time to brew! You don't need 'sudo' for Homebrew." --affirmative="Glug, glug." --negative="Not thirsty." && $EXTRAPKGINST "$PACKAGE" || echo "Okay, then."
+
 sleep 0.5; clear

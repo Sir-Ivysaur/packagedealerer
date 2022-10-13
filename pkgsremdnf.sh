@@ -19,4 +19,7 @@ gum spin --spinner dot --title "Looking at the package hit-list." -- sleep 2.5; 
 # This asks yes or no.
 gum confirm "I have the bin ready! Are we ready to remove packages? You need the 'sudo' pass btw." --affirmative="Fire the nuke!!!" --negative="Spare the packages' lives." && sudo dnf remove "$PACKAGE" || echo "Okay, then."
 
+# Uses variable package manager.
+gum confirm "I have the bin ready! Are we ready to remove packages? You need the 'sudo' pass btw." --affirmative="Fire the nuke!!!" --negative="Spare the packages' lives." && $NATIVEPKGREM "$PACKAGE" || echo "Okay, then."
+
 sleep 0.5; clear
