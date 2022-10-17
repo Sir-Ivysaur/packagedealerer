@@ -17,9 +17,9 @@ PACKAGE=$(gum input --placeholder "Enter package name(s)")
 gum spin --spinner dot --title "Flattening something..." -- sleep 2.5; sleep 1; clear
 
 # This asks yes or no.
-gum confirm "Ready to remove packages? You don't need 'sudo' for Flatpaks." --affirmative="Get the bin." --negative="Just leave it for now." && flatpak remove "$PACKAGE" || echo "Okay, then."
+# gum confirm "Ready to remove packages? You don't need 'sudo' for Flatpaks." --affirmative="Get the bin." --negative="Just leave it for now." && flatpak remove "$PACKAGE" || echo "Okay, then."
 
 # Uses variable package manager instead of the pre-defined one, Flatpak.
-# gum confirm "Ready to remove packages? You don't need 'sudo' for Flatpaks." --affirmative="Get the bin." --negative="Just leave it for now." && $AGNOSPKGREM "$PACKAGE" || echo "Okay, then."
+gum confirm "Ready to remove packages? You don't need 'sudo' for Flatpaks." --affirmative="Get the bin." --negative="Just leave it for now." && $AGNOSPKGREM "$PACKAGE" || echo "Okay, then."
 
 sleep 0.5; clear

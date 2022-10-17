@@ -17,9 +17,9 @@ PACKAGE=$(gum input --placeholder "Enter package name(s)")
 gum spin --spinner dot --title "Reading your list of packages..." -- sleep 2.5; sleep 1; clear
 
 # This asks yes or no.
-gum confirm "Okay, then. Ready to install? You need the 'sudo' pass btw." --affirmative="Let's do it!" --negative="Hm, maybe next time." && sudo dnf install "$PACKAGE" || echo "Okay, then."
+    # gum confirm "Okay, then. Ready to install? You need the 'sudo' pass btw." --affirmative="Let's do it!" --negative="Hm, maybe next time." && sudo dnf install "$PACKAGE" || echo "Okay, then."
 
 # The confirmation dialog, but it uses the variable package manager.
-    # gum confirm "Okay, then. Ready to install? You need the 'sudo' pass btw." --affirmative="Let's do it!" --negative="Hm, maybe next time." && $NATIVEPKGINST "$PACKAGE" || echo "Okay, then."
+    gum confirm "Okay, then. Ready to install? You need the 'sudo' pass btw." --affirmative="Let's do it!" --negative="Hm, maybe next time." && $NATIVEPKGINST "$PACKAGE" || echo "Okay, then."
 
 sleep 0.5; clear

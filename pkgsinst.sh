@@ -12,11 +12,11 @@ INSTMGR=$(gum choose --height=3 --cursor="> " --limit=1 "DNF." "Flatpak." "Homeb
 sleep 1
 
 # The choice is set as a variable, and these will respond and execute the corresponding script.
-[[ "$INSTMGR" == "DNF." ]] && ./pkgsinstdnf.sh
-[[ "$INSTMGR" == "Flatpak." ]] && ./pkgsinstflatpak.sh
-[[ "$INSTMGR" == "Homebrew." ]] && ./pkgsinstbrew.sh
-
-# Experimental form. Uncomment this and comment the above to test.
     # [[ "$INSTMGR" == "DNF." ]] && ./pkgsinstdnf.sh
     # [[ "$INSTMGR" == "Flatpak." ]] && ./pkgsinstflatpak.sh
     # [[ "$INSTMGR" == "Homebrew." ]] && ./pkgsinstbrew.sh
+
+# Experimental form. Uncomment this and comment the above to test.
+    [[ "$INSTMGR" == "$NATIVEPKGINST" ]] && ./pkgsinstdnf.sh
+    [[ "$INSTMGR" == "$AGNOSPKGINST" ]] && ./pkgsinstflatpak.sh
+    [[ "$INSTMGR" == "$EXTRAPKGINST" ]] && ./pkgsinstbrew.sh
