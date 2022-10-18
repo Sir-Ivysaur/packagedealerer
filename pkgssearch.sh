@@ -22,7 +22,8 @@ echo
     echo "Search with?"
     echo
     # INSTMGR=$(gum choose --height=3 --cursor="> " --limit=1 "DNF." "Flatpak." "Homebrew.")
-    # This down here is experimental.
+   
+# This down here is experimental.
     INSTMGR=$(gum choose --height=3 --cursor="> " --limit=1 "$NATIVEPKG" "$AGNOSPKG" "$EXTRAPKG")
 
 # Deploys the search party.

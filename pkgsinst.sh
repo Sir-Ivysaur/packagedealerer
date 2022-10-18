@@ -17,6 +17,6 @@ sleep 1
     # [[ "$INSTMGR" == "Homebrew." ]] && ./pkgsinstbrew.sh
 
 # Experimental form. Uncomment this and comment the above to test.
-    [[ "$INSTMGR" == "$NATIVEPKGINST" ]] && ./pkgsinstdnf.sh
-    [[ "$INSTMGR" == "$AGNOSPKGINST" ]] && ./pkgsinstflatpak.sh
-    [[ "$INSTMGR" == "$EXTRAPKGINST" ]] && ./pkgsinstbrew.sh
+    [[ "$INSTMGR" == "$NATIVEPKG" ]] && ./pkgsinstdnf.sh
+    [[ "$INSTMGR" == "$AGNOSPKG" ]] && ./pkgsinstflatpak.sh
+    [[ "$INSTMGR" == "$EXTRAPKG" ]] && ./pkgsinstbrew.sh
