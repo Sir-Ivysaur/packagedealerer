@@ -53,7 +53,7 @@ clear
             export EXTRAPKGSEARCH="brew search"
         
         # This variable specifies the update command for the extra package manager.
-            export EXTRAPKGUPDATE="brew update && brew upgrade"
+            export EXTRAPKGUPDATE="brew upgrade"
 
 # Presents ASCII art. Generated with textkool.com's ASCII art generator, using its Pagga font. This pulls it from the .about.md file.
     echo
