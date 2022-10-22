@@ -11,6 +11,11 @@ echo "When entering multiple packages, just type each of their names one after t
 sleep 1; echo "Take a deep breath and make sure your selection of packages is what you want."
 echo
 
+# Asks where you want to grab packages from. Either a file (such as a .rpm or .deb file) or from the repos. I've commented these lines because I'm not sure if this works yet.
+    # FROM=$(gum choose --cursor="> " --limit=1 "Download packages from the repos." "Install from a file.")
+    # [[ "$FROM" == "Install from file." ]] && echo "Find your installation file! Use the arrow keys and the Enter key to select. Navigate through your /home until you find that file." && PACKAGE=$(gum file ~)
+    # [[ "$FROM" == "Download packages from the repos." ]] && PACKAGE=$(gum input --placeholder "Enter package name(s)")
+
 # Prompts for package names.
 PACKAGE=$(gum input --placeholder "Enter package name(s)")
 # Does nothing btw.
