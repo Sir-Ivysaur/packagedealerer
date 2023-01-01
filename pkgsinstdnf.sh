@@ -1,5 +1,10 @@
 #!/bin/bash
 
+[[ "$IS_USER_A_DINGUS" == "True." ]] && gum style \
+	--border double --border-foreground 257 \
+	--align center --width 50 --margin "1 2" --padding "2 4" \
+	'You are a dingus.' && sleep 10s && clear
+
 clear
 echo
 # Greeting.

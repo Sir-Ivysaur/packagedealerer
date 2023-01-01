@@ -2,11 +2,16 @@
 
 # This is for updating the system, if you didn't notice.
 
+[[ "$IS_USER_A_DINGUS" == "TRUE" ]] && gum style \
+	--border double --border-foreground 257 \
+	--align center --width 50 --margin "1 2" --padding "2 4" \
+	'You are a dingus.' && sleep 10s && clear
+
 clear
 echo
 
 echo "You finally decided to do an update."
-echo "I could have some package managers update specific packages only. However, Homebrew can't do this, it seems."
+echo "I could have some package managers update specific packages only."
 echo
 echo "By the way, if you want to upgrade everything (and I mean everything), consider trying 'topgrade'."
 echo
@@ -31,4 +36,4 @@ sleep 1
 # Experimental.
     [[ "$INSTMGR" == "$NATIVEPKG" ]] && $NATIVEPKGUPDATE "$PACKAGE"
     [[ "$INSTMGR" == "$AGNOSPKG" ]] && $AGNOSPKGUPDATE "$PACKAGE"
-    [[ "$INSTMGR" == "$EXTRAPKG" ]] && $EXTRAPKGUPDATE
+    [[ "$INSTMGR" == "$EXTRAPKG" ]] && $EXTRAPKGUPDATE "$PACKAGE"
